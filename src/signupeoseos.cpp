@@ -82,8 +82,6 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
         .active = active
     };
 
-print  (new_account.name,"\n");
-
   action{
             permission_level{ get_self(), "active"_n },
             "eosio"_n,
