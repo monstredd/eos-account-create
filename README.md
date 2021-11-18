@@ -9,5 +9,5 @@ Except for the system fee, there are no additional costs.
 
 Support eoscdt1.8 version compilation.
 
-only 0.06 eos register an eos account.(depends on ram price).
+set only 0.06 eos register an eos account.(but depends on ram price,0.06 eos is enough now).
 
