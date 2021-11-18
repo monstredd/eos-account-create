@@ -1,7 +1,7 @@
 # eos-account-create
 Modified from the signupeoseos open source codes;
 
-https://github.com/DeBankDeFi/signupeoseos  (it not support cdt above 1.3 version);
+https://github.com/DeBankDeFi/signupeoseos
 
 Delete the pledge cpu and net;
 
