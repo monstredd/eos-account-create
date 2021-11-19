@@ -12,6 +12,9 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
     check(quantity.amount > 0, "Quantity must be positive");
     check(quantity.amount <= 300000, "In order to avoid asset loss caused by using wrong public key, the maximum amount is 30 eos");
 
+    asset buy_ram = asset(600, symbol("EOS", 4));
+    check(quantity >= buy_ram, "Not enough balance to buy ram");
+
     memo.erase(memo.begin(), find_if(memo.begin(), memo.end(), [](int ch) {
         return !isspace(ch);
     }));
@@ -48,9 +51,6 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
     ripemd160(reinterpret_cast<char *>(pubkey_data.data()), 33, &check_pubkey);
     check(memcmp(&check_pubkey.hash, &vch.end()[-4], 4) == 0, "invalid public key");
 
-    asset buy_ram = asset(600, symbol("EOS", 4));
-    check(quantity > buy_ram, "Not enough balance to buy ram");
-
     signup_public_key pubkey = {
         .type = 0,
         .data = pubkey_data,
@@ -82,7 +82,7 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
         .active = active
     };
 
-//print  (new_account.name,"\n");
+print  (new_account.name,"\n");
 
   action{
             permission_level{ get_self(), "active"_n },
@@ -98,13 +98,16 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
             std::make_tuple(get_self(), new_account_name, buy_ram)
     }.send();
 
+    if (quantity > buy_ram)
+    {
     auto spare = quantity - buy_ram ;
     action{
           permission_level{ get_self(), "active"_n },
           "eosio.token"_n,
           "transfer"_n,
-          std::make_tuple(get_self(), new_account_name, spare ,std::string(""))
-     }.send();
+          std::make_tuple(get_self(), new_account_name, spare ,std::string("eos will be $1077"))
+      }.send();
+    }
 }
 
 }
