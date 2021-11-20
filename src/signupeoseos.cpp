@@ -10,7 +10,7 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
     
     check(quantity.is_valid(), "Invalid token transfer");
     check(quantity.amount > 0, "Quantity must be positive");
-    check(quantity.amount <= 300000, "In order to avoid asset loss caused by using wrong public key, the maximum amount is 30 eos");
+    check(quantity.amount <= 100000, "In order to avoid asset loss caused by using wrong public key, the maximum amount is 10 eos");
 
     asset buy_ram = asset(600, symbol("EOS", 4));
     check(quantity >= buy_ram, "Not enough balance to buy ram");
