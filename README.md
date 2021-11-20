@@ -1,4 +1,7 @@
 # eos-account-create
+
+EN:
+
 Modified from the signupeoseos open source codes;
 
 https://github.com/DeBankDeFi/signupeoseos
@@ -13,8 +16,9 @@ set only 0.06 eos register an eos account.(but depends on ram price,0.06 eos is 
 
 set the code on an eos account,send more than 0.06 EOS to the account with memo [AccountName]-[PublicKey] account will be automatically registered.The excess amount will appear in your newly registered account;
 
-https://bloks.io/account/accountspapa
+contract on EOS main net https://bloks.io/account/accountspapa
 
 send  0.06 EOS to the account accountspapa with memo [AccountName]-[PublicKey] account will be automatically registered.
 
-worng Publickey and AccountName and AccountName exits, transfer will be failed.
+worng Publickey and AccountName，AccountName exits, transfer will be failed.
+
