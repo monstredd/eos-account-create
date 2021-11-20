@@ -20,5 +20,24 @@ contract on EOS main net https://bloks.io/account/accountspapa
 
 send  0.06 EOS to the account accountspapa with memo [AccountName]-[PublicKey] account will be automatically registered.
 
-worng Publickey and AccountName，AccountName exits, transfer will be failed.
+wrong Publickey，wrong AccountName and AccountName already exists, transfer will be failed.
 
+从signupeoseos开源代码修改而来；
+
+https://github.com/DeBankDeFi/signupeoseo
+
+删除质押的cpu和net；
+
+支持eoscdt 1.8版本编译；
+
+注册eos账户最便宜的方式，除了系统费，没有额外费用；
+
+set only 0.06 eos 注册一个 eos 帐户。（但取决于 ram 价格，现在 0.06 eos 就足够了）；
+
+在eos账户上设置code，发送超过0.06 EOS到备注的账户[AccountName]-[PublicKey]账户将自动注册。超出的金额将出现在您新注册的账户中；
+
+EOS 主网上合约 https://bloks.io/account/accountspapa
+
+发送 0.06 EOS 到账户 accountpapa 按以下格式备注 [用户名]-[公钥] 账户将被自动注册。
+
+不符合规则的公钥和账号名，以及账户名已经存在，转账将失败。
