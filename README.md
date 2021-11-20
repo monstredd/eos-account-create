@@ -22,6 +22,8 @@ send  0.06 EOS to the account accountspapa with memo [AccountName]-[PublicKey] a
 
 wrong Publickey，wrong AccountName and AccountName already exists, transfer will be failed.
 
+EN：
+
 从signupeoseos开源代码修改而来；
 
 https://github.com/DeBankDeFi/signupeoseo
@@ -30,7 +32,7 @@ https://github.com/DeBankDeFi/signupeoseo
 
 支持eoscdt 1.8版本编译；
 
-注册eos账户最便宜的方式，除了系统费，没有额外费用；
+注册eos账户最便宜的方式，除了EOS系统收取的费用，没有额外费用，无盈利目的；
 
 set only 0.06 eos 注册一个 eos 帐户。（但取决于 ram 价格，现在 0.06 eos 就足够了）；
 
