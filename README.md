@@ -34,6 +34,8 @@ Fill in the name of the account that will receive the airdrop in the first box, 
 
 Fill the second with  "4, NPP"
 
+There are a total of 21 million NPPs, and each new account can receive 100 airdrops. When the circulation reaches 10 million, the number of airdrops will begin to decrease linearly.
+
 CN：
 
 从signupeoseos开源代码修改而来；
@@ -69,3 +71,5 @@ https://bloks.io/account/eosnamespapa?tab=Actions&account=eosnamespapa
 第一个框填入  接收空投的账号名，也就是新注册的账号。
 
 第二个填入    4,NPP
+
+NPP总共2100万枚，每个新账户可以领100枚空投，当发行量达到1000万枚时候，空投数量将开始线性减少。
