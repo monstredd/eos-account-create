@@ -18,7 +18,7 @@ set the code on an eos account,send more than 0.06 EOS to the account with memo 
 
 contract on EOS main net https://bloks.io/account/accountspapa
 
-send  0.06 EOS to the account accountspapa with memo [AccountName]-[PublicKey] account will be automatically registered.
+send  0.06 EOS to the account accountspapa with memo [12 letters AccountName]-[PublicKey] account will be automatically registered.
 
 wrong Publickey，wrong AccountName and AccountName already exists, transfer will be failed.
 
@@ -54,7 +54,7 @@ https://github.com/DeBankDeFi/signupeoseo
 
 EOS主网上合约 https://bloks.io/account/accountspapa
 
-发送 0.06 EOS 到账户 accountpapa 按以下格式备注 [用户名]-[公钥] 账户将被自动注册。
+发送 0.06 EOS 到账户 accountpapa 按以下格式备注memo [12位用户名]-[公钥] 账户将被自动注册。
 
 如果发送的金额超过0.06 EOS，多余的金额会出现在你新注册的账号里，为了防止弄丢私钥等操作失误的损失，超过10EOS的转账将不会成功。
 
@@ -73,3 +73,38 @@ https://bloks.io/account/eosnamespapa?tab=Actions&account=eosnamespapa
 第二个填入    4,NPP
 
 NPP总共2100万枚，每个新账户可以领100枚空投，当发行量达到1000万枚时候，空投数量将开始线性减少。
+
+###############################################################################
+
+因为大部分加密货币交易所禁止向智能合约账户提币，导致注册服务无法使用，所以建立了中转服务。
+
+即交易所提币到非智能合约的中转账户，中转账户再将需求发送到注册合约。
+
+中转账户地址 ： https://bloks.io/account/accountsmama
+
+发送 0.1 EOS 到账户 accountmama 按以下4种格式备注memo账户将被自动注册（小于0.1eos，大于10eos，不按格式的备注错误，备注的公钥和账号不符合规则，会导致注册失败，和资金不便找回，建议只使用0.1EOS）
+
+（中转服务需要维持节点，账号需要消耗主网资源，所以比智能合约注册略贵）
+
+因为一些交易所对于转账memo的限制，中转服务兼容4种格式的备注。
+
+格式1： [12位字母账号]-[EOS开头的公钥] 
+
+格式2： [EOS开头的公钥]
+
+格式3： [12位字母账号]-[无EOS开头公钥]       #无EOS开头公钥，即将EOS公钥开头的EOS删除以后剩下的字符串
+
+格式4： [无EOS开头公钥]                      
+
+格式 1和3  如果账号名已经存在 则自动注册为随机名字账号，不存在，则按需求注册。
+
+格式 2和4  自动注册为随机名字账号。
+
+EOS公钥，私钥对请使用各大品牌钱包内置生成器生成，或者社区认可的生成方式生成，切勿相信钓鱼网站。 智能合约直接注册和中转注册，将使用你提供的公钥注册，不会碰触你的私钥。如果私钥不慎泄露，请及时更换您的公钥和私钥对。强烈推荐使用硬件钱包的公钥进行注册。
+
+中转注册为中心化的方式，一般情况下，在区块完全确认（区块不可逆）以后就会注册成功，如果公钥提供错误，将无法找回账户。
+
+中转服务不是去中心化的，不可避免有小概率，节点当机，网络损坏导致无法注册的问题。如果有问题，请及时和我联系 https://t.me/eosmonstre
+
+
+
