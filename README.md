@@ -54,11 +54,11 @@ Format 1: [12-letter account number]-[public key starting with EOS]
 
 Format 2: [Public key at the beginning of EOS]
 
-Format 3: [12-letter account number]-[public key starting without EOS begin]
+Format 3: [12-letter account number]-[public key without EOS begin]
 
-Format 4: [public key starting without EOS begin]
+Format 4: [public key without EOS begin]
 
-#public key without the EOS begin, that is, the remaining string after deleting the 'EOS' at the beginning of the EOS public key
+#public key without 'EOS' begin, that is, the remaining string after deleting the 'EOS' at the beginning of the EOS public key
 
 If there are remarks in the above 4 formats that are prohibited by the exchange, please contact me and I will open up a new method.
 
