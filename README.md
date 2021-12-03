@@ -54,7 +54,7 @@ https://github.com/DeBankDeFi/signupeoseo
 
 EOS主网上合约 https://bloks.io/account/accountspapa
 
-发送 0.06 EOS 到账户 accountpapa 按以下格式备注memo [12位用户名]-[公钥] 账户将被自动注册。
+发送 0.06 EOS 到账户 accountspapa 按以下格式备注memo [12位用户名]-[公钥] 账户将被自动注册。
 
 如果发送的金额超过0.06 EOS，多余的金额会出现在你新注册的账号里，为了防止弄丢私钥等操作失误的损失，超过10EOS的转账将不会成功。
 
