@@ -34,7 +34,8 @@ Fill in the name of the account that will receive the airdrop in the first box, 
 
 Fill the second with  "4, NPP"
 
-There are a total of 21 million NPPs, and each new account can receive 100 airdrops. The number of airdrops is halved every 180 days.
+There are a total of 21 million NPPs, and each new account can receive 100 airdrops. The number of airdrops is halved every 180 days from beginning of December 1, 2021
+
 ###############################################################################
 
 Because most cryptocurrency exchanges and centralized wallets prohibit withdrawing EOS to smart contract accounts, the registration service cannot be used, so a transfer service has been established.
@@ -114,7 +115,7 @@ https://bloks.io/account/eosnamespapa?tab=Actions&account=eosnamespapa
 
 第二个填入    4,NPP
 
-NPP总共2100万枚，每个新账户可以领100枚空投，空投数量每180天减半。
+NPP总共2100万枚，每个新账户可以领100枚空投，空投数量从2021年12月1日开始每180天减半。
 
 ###############################################################################
 
