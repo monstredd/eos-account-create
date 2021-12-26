@@ -24,7 +24,7 @@ wrong Publickey，wrong AccountName and AccountName already exists, transfer wil
 
 Users who successfully register using this method will receive an airdrop of NPP (names papa) tokens.
 
-You need to claim the tokens yourself, and those who can't get it for a long time will be cleared.
+You need to claim the tokens yourself.
 
 https://bloks.io/account/eosnamespapa?tab=Actions&account=eosnamespapa
 
@@ -105,7 +105,7 @@ EOS主网上合约 https://bloks.io/account/accountspapa
 
 成功使用此方法注册的用户，将得到NPP（names papa） 通证的空投。
 
-需要自行去代币合约领取，长期不领取的将被清除。
+需要自行去代币合约领取。
 
 https://bloks.io/account/eosnamespapa?tab=Actions&account=eosnamespapa
 
