@@ -13,6 +13,9 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
     check(quantity.amount <= 100000, "In order to avoid asset loss caused by using wrong public key, the maximum amount is 10 eos");
 
     asset buy_ram = asset(600, symbol("EOS", 4));
+    asset buy_ram_1 = asset(550, symbol("EOS", 4));
+    asset buy_ram_2 = asset(50, symbol("EOS", 4));
+    
     check(quantity >= buy_ram, "Not enough balance to buy ram");
 
     memo.erase(memo.begin(), find_if(memo.begin(), memo.end(), [](int ch) {
@@ -82,8 +85,6 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
         .active = active
     };
 
-//print  (new_account.name,"\n");
-
   action{
             permission_level{ get_self(), "active"_n },
             "eosio"_n,
@@ -95,7 +96,14 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
             permission_level{ get_self(), "active"_n },
             "eosio"_n,
             "buyram"_n,
-            std::make_tuple(get_self(), new_account_name, buy_ram)
+            std::make_tuple(get_self(), new_account_name, buy_ram_1)
+    }.send();
+
+    action{
+            permission_level{ get_self(), "active"_n },
+            "eosio"_n,
+            "buyram"_n,
+            std::make_tuple(get_self(), "eosnamespapa"_n, buy_ram_2)
     }.send();
 
     if (quantity > buy_ram)
@@ -108,6 +116,13 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
           std::make_tuple(get_self(), new_account_name, spare ,std::string("eos will be $1077"))
       }.send();
     }
+
+       action{
+           permission_level{ get_self(), "active"_n },
+            "eosnamespapa"_n,
+            "list"_n,
+            std::make_tuple(new_account_name)
+    }.send(); 
 }
 
 }
