@@ -34,9 +34,26 @@ Fill in the name of the account that will receive the airdrop in the first box, 
 
 Fill the second with  "4, NPP"
 
-There are a total of 21 million NPPs, and each new account can receive 100 airdrops. The number of airdrops is halved every 180 days from beginning of December 1, 2021
+There are a total of 21 million NPPs, and each new account can receive 100 airdrops. The number of airdrops is halved every 180 days from beginning of December 1, 2021,and when the total number of issuances reaches 10 million, it also starts to reduce production linearly, taking the minimum of the two weights。
 
 ###############################################################################
+
+******Become a register******
+
+Register as a registered account. After registering an account with this account, the airdrop can be received by this account.
+
+Login with account https://bloks.io/account/eosnamespapa?loadContract=true&tab=Actions&account=eosnamespapa&scope=eosnamespapa&limit=100&table=register&action=enter
+
+Fill in the account name in the box.
+
+Click send transaction.
+
+Use the exit action to disqualificate register as the same way.
+
+
+###############################################################################
+
+******Transit service******
 
 Because most cryptocurrency exchanges and centralized wallets prohibit withdrawing EOS to smart contract accounts, the registration service cannot be used, so a transfer service has been established.
 
@@ -89,7 +106,7 @@ https://github.com/DeBankDeFi/signupeoseo
 
 支持eoscdt 1.8版本编译；
 
-注册eos账户最便宜的方式，除了EOS系统收取的费用，没有额外费用，无盈利目的；
+注册eos账户最便宜的方式，除了购买EOS系统RAM的费用，没有额外费用，无盈利目的；
 
 设置为仅使用 0.06 eos 注册一个 eos 帐户。（但取决于 ram 价格，现在 0.06 eos 就足够了）；
 
@@ -99,7 +116,7 @@ EOS主网上合约 https://bloks.io/account/accountspapa
 
 发送 0.06 EOS 到账户 accountspapa 按以下格式备注memo [12位用户名]-[公钥] 账户将被自动注册。
 
-如果发送的金额超过0.06 EOS，多余的金额会出现在你新注册的账号里，为了防止弄丢私钥等操作失误的损失，超过10EOS的转账将不会成功。
+如果发送的金额超过0.06 EOS，多余的金额会出现在你新注册的账号里，如果对应公钥的私钥丢失，将无法找回账户和资金，请小额谨慎使用。
 
 不符合规则的公钥和账号名，以及账户名已经存在，转账将失败。
 
@@ -115,7 +132,23 @@ https://bloks.io/account/eosnamespapa?tab=Actions&account=eosnamespapa
 
 第二个填入    4,NPP
 
-NPP总共2100万枚，每个新账户可以领100枚空投，空投数量从2021年12月1日开始每180天减半。
+再点击发送事务
+
+NPP总共2100万枚，每个新账户可以领100枚空投，空投数量从2021年12月1日开始每180天减半，当发行总数达到1000万时候也开始线性减产，取这两个权重的最小值
+
+###############################################################################
+
+******成为注册者******
+
+注册成为注册账号，用该账号注册账号以后，空投可以由该账号领取。
+
+使用账号登陆https://bloks.io/account/eosnamespapa?loadContract=true&tab=Actions&account=eosnamespapa&scope=eosnamespapa&limit=100&table=register&action=enter
+
+框内填入 账号名。
+
+再点击发送事务。
+
+选取exit接口使用同样的操作可以退出注册者。
 
 ###############################################################################
 
@@ -127,7 +160,7 @@ NPP总共2100万枚，每个新账户可以领100枚空投，空投数量从2021
 
 中转账户地址 ： https://bloks.io/account/accountsmama
 
-发送 0.1 EOS 到账户 accountsmama 按以下4种格式备注memo账户将被自动注册（小于0.1eos，大于10eos，不按格式的备注错误，备注的公钥和账号不符合规则，会导致注册失败，和资金不便找回，建议只使用0.1EOS）
+发送 0.1 EOS 到账户 accountsmama 按以下4种格式备注memo账户将被自动注册（小于0.1eos，不按格式的备注错误，备注的公钥和账号不符合规则，会导致注册失败，和资金不便找回，建议只使用0.1EOS）
 
 （中转服务需要维持节点，账号需要消耗主网资源，所以比智能合约注册略贵）
 
