@@ -40,7 +40,7 @@ There are a total of 21 million NPPs, and each new account can receive 100 airdr
 
 ******Become a register******
 
-Register as a registered account. After registering an account with this account, the airdrop can be received by this account.
+Register as a register account. After registering an new account by this account, the airdrop can be claimed by this account,not the new account. This service will give rewards to those who help friends create accounts, and give rewards to those who give friends accounts.
 
 Login with account https://bloks.io/account/eosnamespapa?loadContract=true&tab=Actions&account=eosnamespapa&scope=eosnamespapa&limit=100&table=register&action=enter
 
@@ -140,7 +140,7 @@ NPP总共2100万枚，每个新账户可以领100枚空投，空投数量从2021
 
 ******成为注册者******
 
-注册成为注册账号，用该账号注册账号以后，空投可以由该账号领取。
+注册成为注册账号，用该账号注册账号以后，空投可以由该账号领取。这个服务，将给予那些帮助朋友创建账号的人，赠送朋友账号的人的奖励。
 
 使用账号登陆https://bloks.io/account/eosnamespapa?loadContract=true&tab=Actions&account=eosnamespapa&scope=eosnamespapa&limit=100&table=register&action=enter
 
@@ -149,6 +149,8 @@ NPP总共2100万枚，每个新账户可以领100枚空投，空投数量从2021
 再点击发送事务。
 
 选取exit接口使用同样的操作可以退出注册者。
+
+退出注册者以后，再使用此账号注册账号，空投将恢复为新账号领取。
 
 ###############################################################################
 
