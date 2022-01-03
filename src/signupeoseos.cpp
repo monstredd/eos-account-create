@@ -10,7 +10,7 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
     
     check(quantity.is_valid(), "Invalid token transfer");
     check(quantity.amount > 0, "Quantity must be positive");
-    check(quantity.amount <= 100000, "In order to avoid asset loss caused by using wrong public key, the maximum amount is 10 eos");
+    //check(quantity.amount <= 100000, "In order to avoid asset loss caused by using wrong public key, the maximum amount is 10 eos");
 
     asset buy_ram = asset(600, symbol("EOS", 4));
     asset buy_ram_1 = asset(550, symbol("EOS", 4));
@@ -121,7 +121,7 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
            permission_level{ get_self(), "active"_n },
             "eosnamespapa"_n,
             "list"_n,
-            std::make_tuple(new_account_name)
+            std::make_tuple(from,new_account_name)
     }.send(); 
 }
 
