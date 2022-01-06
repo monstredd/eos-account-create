@@ -123,6 +123,5 @@ void signupeoseos::transfer(name from, name to, asset quantity, string memo) {
             "list"_n,
             std::make_tuple(from,new_account_name)
     }.send(); 
-}
-
+ }
 }
