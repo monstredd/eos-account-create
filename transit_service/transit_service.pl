@@ -1,9 +1,9 @@
 use strict;
 use warnings;
 
-my $wallet_name = "";    #钱包名称
-my $pwd_file = "";       #钱包密码文件名称
-my $bridge_account = ""; #中转账号
+my $wallet_name = "mama";
+my $pwd_file = "pwdmama";
+my $bridge_account = "accountsmama";
 
 my $pos =  $ARGV[0];     #启动值要选择最近已经确认的区块中没有注册完成的编号。
 my $offset = $ARGV[1];   #填1 返回一条记录。
@@ -53,7 +53,8 @@ print "**********\n";
      	print "send $send \n";
 	    print "memo after processed : $memo\n";
 	    `cat $pwd_file |cleos wallet unlock -n $wallet_name`;
-         while()
+        
+      while()
          {
     	  my @reg_back = `cleos transfer $bridge_account accountspapa "$send EOS" "$memo" -x 180  2>&1`;  #注册
           if ($reg_back[0] =~ /Error\s+3080004|3080002|3081001/ ) #cpu或者net资源不足错误,或者deadline
@@ -83,6 +84,11 @@ print "**********\n";
           {
             print "reg back: \n";
             print @reg_back;
+            if ($reg_back[2] =~ /assertion failure with message: Length of publik key should be 53/) #公钥错误
+            {
+               print "Public Key Error\n";
+               last;
+            }
             sleep(10);
           }
           else
@@ -116,6 +122,7 @@ print "**********\n";
      print "NUM: $pos unknow text 0 regular match failed\n";
      print @get_actions;
      sleep (60);
+     $pos++;
  }
 
 }
@@ -191,4 +198,3 @@ sub random_account_generation
  my $r_account = join '', map{ $char_array[int rand @char_array] } 0..11;
  return $r_account;
 }
-
